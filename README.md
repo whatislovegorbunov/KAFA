@@ -1,4 +1,4 @@
-# ShowMustGoOn
+# Kafa
 
 An app that helps you keep track of activities and hobbies you once enjoyed.
 Add activities, log when you do them, and the app reminds you when it's been

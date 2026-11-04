@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.showmustgoon"
+    namespace = "com.example.kafa"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.showmustgoon"
+        applicationId = "com.example.kafa"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -75,7 +75,6 @@ dependencies {
     ksp(libs.room.compiler)
 
     testImplementation(libs.junit)
-    testImplementation(libs.room.testing)
     testImplementation(libs.mockk)
     testImplementation(libs.turbine)
     testImplementation(libs.kotlinx.coroutines.test)

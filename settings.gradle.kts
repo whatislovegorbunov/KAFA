@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ShowMustGoOn"
+rootProject.name = "kafa"
 include(":app")
- 
