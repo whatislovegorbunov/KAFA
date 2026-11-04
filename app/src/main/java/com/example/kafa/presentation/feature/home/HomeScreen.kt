@@ -44,6 +44,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.kafa.domain.model.Note
 import com.example.kafa.domain.model.Recommendation
+import com.example.kafa.ui.theme.KafaTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -238,14 +239,14 @@ private fun RecommendationCard(
                 Text(
                     text = recommendation.message,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = KafaTheme.colors.textSecondary
                 )
             }
             IconButton(onClick = { onMarkAsDone(recommendation.note.id) }) {
                 Icon(
                     imageVector = Icons.Default.Check,
                     contentDescription = "Mark as done",
-                    tint = MaterialTheme.colorScheme.primary
+                    tint = KafaTheme.colors.accent
                 )
             }
         }
